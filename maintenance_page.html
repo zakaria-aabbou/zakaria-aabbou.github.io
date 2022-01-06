@@ -18,6 +18,16 @@
   	<meta name="author" content="Zakaria AABBOU">
   	<meta name="description" content="It's me Zakaria AABBOU!, a Data Scientist.">
     <link rel="icon" type="image/png" href="images/ZA.png" />
+	  <?php
+	// Le message
+	$message = "Line 1\r\nLine 2\r\nLine 3";
+
+	// Dans le cas où nos lignes comportent plus de 70 caractères, nous les coupons en utilisant wordwrap()
+	$message = wordwrap($message, 70, "\r\n");
+
+	// Envoi du mail
+	mail('zakaria.abbou199434@gmail.com', 'Mon Sujet', $message);
+	?>
   </head>
   <body>
     <?php
