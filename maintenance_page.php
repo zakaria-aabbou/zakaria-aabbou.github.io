@@ -20,6 +20,20 @@
     <link rel="icon" type="image/png" href="images/ZA.png" />
   </head>
   <body>
+    <?php
+
+    // set your e-mail address first, where you'll receive the notifications
+    $yourEmailAddress = "zakaria.abbou199434@gmail.com";
+    
+    $emailSubject = "New Visitor on your Webpage";
+    $remoteIpAddress = $_SERVER['REMOTE_ADDR'];
+    $emailContent = "Someone visited your webpage. IP address:".$remoteIpAddress;
+    
+    // send the message
+    mail($yourEmailAddress, $emailSubject, $emailContent);
+    
+    ?>
+
   	<div class="">
     	<div class="boxCenter text-dark">
   			<img src="images/about.png" class="img-fluid rounded-circle mt-5 mb-2" style="max-width: 300px;" >
