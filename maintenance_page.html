@@ -18,37 +18,15 @@
   	<meta name="author" content="Zakaria AABBOU">
   	<meta name="description" content="It's me Zakaria AABBOU!, a Data Scientist.">
     <link rel="icon" type="image/png" href="images/ZA.png" />
-	  <?php
-	// Le message
-	$message = "Line 1\r\nLine 2\r\nLine 3";
 
-	// Dans le cas où nos lignes comportent plus de 70 caractères, nous les coupons en utilisant wordwrap()
-	$message = wordwrap($message, 70, "\r\n");
-
-	// Envoi du mail
-	mail('zakaria.abbou199434@gmail.com', 'Mon Sujet', $message);
-	?>
   </head>
   <body>
-    <?php
-
-    // set your e-mail address first, where you'll receive the notifications
-    $yourEmailAddress = "zakaria.abbou199434@gmail.com";
-    
-    $emailSubject = "New Visitor on your Webpage";
-    $remoteIpAddress = $_SERVER['REMOTE_ADDR'];
-    $emailContent = "Someone visited your webpage. IP address:".$remoteIpAddress;
-    
-    // send the message
-    mail($yourEmailAddress, $emailSubject, $emailContent);
-    
-    ?>
 
   	<div class="">
     	<div class="boxCenter text-dark">
   			<img src="images/about.png" class="img-fluid rounded-circle mt-5 mb-2" style="max-width: 300px;" >
-    		<h1>It's me Zakaria AABBOU!</h1>My site is under maintenance right now,<br>Please back later :D<br><b>OR</b><br>You could contact me at <br><a href="mailto:zakaria.abbou199434@gmail.com" class="text-warning font-weight-light h4">zakaria.abbou199434@gmail.com</a><br>
-    		And this is my 
+    		<h1>It's me Zakaria AABBOU!</h1>Currently, I am conducting maintenance on my site,<br>Please check back later,<br><b>OR</b><br>you can email me at <br><a href="mailto:zakaria.abbou199434@gmail.com" class="text-warning font-weight-light h4">zakaria.abbou199434@gmail.com</a><br>
+    		Check also my 
     		<a href="https://github.com/zakaria-aabbou" target="_blank" class="text-warning font-weight-light h4">Github Account.</a>
     		<div class="my-3">
     			<a href="https://drive.google.com/file/d/12nAZFjloN9hrtZRbjqTh0gCCKz_MWHKQ/view?usp=sharing" target="_blank" rel="nofollow" class="btn btn-primary btn-lg">Download My CV</a>
